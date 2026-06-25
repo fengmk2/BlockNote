@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/node": "22.13.13",
     "typescript": "^5.9.3",
+    "vite": "catalog:",
     "vite-plus": "catalog:"
   },
   "peerDependencies": {
