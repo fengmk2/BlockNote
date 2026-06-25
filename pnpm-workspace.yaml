@@ -17,6 +17,9 @@ overrides:
   "@headlessui/react": "^2.2.4"
   "@tiptap/core": "^3.0.0"
   "@tiptap/pm": "^3.0.0"
+  vite: "catalog:"
+  vitest: "catalog:"
+  vite-plus: https://pkg.pr.new/voidzero-dev/vite-plus@529396f85556c9ae7650dad6b52257b94a1fd0d2
 allowBuilds:
   "@parcel/watcher": true
   "@sentry/cli": true
@@ -29,7 +32,9 @@ allowBuilds:
   sharp: false
   workerd: false
 catalog:
-  vite-plus: ^0.1.24
+  vite-plus: https://pkg.pr.new/voidzero-dev/vite-plus@529396f85556c9ae7650dad6b52257b94a1fd0d2
+  vite: https://pkg.pr.new/voidzero-dev/vite-plus/@voidzero-dev/vite-plus-core@529396f85556c9ae7650dad6b52257b94a1fd0d2
+  vitest: 4.1.9
 minimumReleaseAgeExclude:
   - vite-plus
   - "@voidzero-dev/*"
@@ -39,3 +44,13 @@ minimumReleaseAgeExclude:
   - "@oxlint-tsgolint/*"
   - oxfmt
   - "@oxfmt/*"
+  - vitest
+  - "@vitest/*"
+blockExoticSubdeps: false
+peerDependencyRules:
+  allowAny:
+    - vite
+    - vitest
+  allowedVersions:
+    vite: "*"
+    vitest: "*"
